@@ -1,6 +1,7 @@
 #include <iostream>
 #include "bikeConfig.h"
 #include "client.h"
+#include "employer.h"
 
 int main() {
 //    Bike♥
@@ -19,8 +20,12 @@ int main() {
 
 //    Client♥
     Client Client1("Arsen", 19, "Ukraine", 0, 0);
-    Client Client2("Danya", 18, "Italy", 0, 1);
-    Client Client3("Vitaliy", 21, "Germany", 0, 1);
+    Client Client2("Danya", 18, "Italy", 1, 0);
+    Client Client3("Vitaliy", 21, "Germany", 1, 1);
+
+
+//    Employer♥
+    Employer Employer1("Andrew", "12.02.2004", "USA", 160000);
 
 
     cout << "Bikes________________\n" << Bike.show() << endl
@@ -33,7 +38,8 @@ int main() {
          << "6____________________\n" << Bikes[2].show() << endl << "\n"
          << "Clients______________\n" << Client1.show() << endl
          << "2____________________\n" << Client2.show() << endl
-         << "3____________________\n" << Client3.show() << endl << "\n";
+         << "3____________________\n" << Client3.show() << endl << "\n"
+         << "Employers____________\n" << Employer1.show() << endl;
 
     return 0;
 }

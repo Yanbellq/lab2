@@ -8,4 +8,6 @@ add_executable(lab2 main.cpp
         bikeConfig.h
         client.cpp
         client.h
+        employer.cpp
+        employer.h
 )
